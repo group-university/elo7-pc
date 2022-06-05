@@ -25,6 +25,7 @@ export default class Account extends Component {
             return false
         }else if(password == ''){
             Alert.alert('Aviso', 'preencha o campo de senha')
+            return false
         }
         return true
     }
@@ -36,7 +37,7 @@ export default class Account extends Component {
         }
     }
 
-    render(){
+    render(_navigation){
         return(
             <ScrollView contentContainerStyle={{
                 flexGrow: 1, justifyContent: 'center', alignItems: "center"
@@ -55,7 +56,7 @@ export default class Account extends Component {
                     <Text style={Styles.Text}>Cadastrar</Text>
                 </TouchableOpacity>
     
-                <TouchableOpacity style={Styles.btnBackLogin} onPress={() => navigation.navigate('Home')}>
+                <TouchableOpacity style={Styles.btnBackLogin} onPress={() => this.props.navigation.navigate('Home')}>
                     <Text style={Styles.Text}>Voltar para o Login</Text>
                 </TouchableOpacity>
 
