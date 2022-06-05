@@ -31,6 +31,11 @@ export default function App() {
         />
         <Stack.Screen
         name="CreateTask" component={CreateTask}
+        options={
+          {title:"Elo7 - Nova Tarefa", headerTintColor: "white", headerStyle: {
+            backgroundColor: "#5D5FEF",
+          }}
+        }
         />
       </Stack.Navigator>
     </NavigationContainer>
