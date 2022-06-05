@@ -16,11 +16,11 @@ export default class Task extends Component {
                 <Image
                     source={no_found} style={{ width: 150, height: 150 }}
                 />
-                <TouchableOpacity style={Styles.btnCreateTask}>
+                <TouchableOpacity style={Styles.btnCreateTask} onPress={() => this.props.navigation.navigate("CreateTask")}>
                     <Text style={StyleSheet.create({ color: "#fff" })}>+</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={Styles.btnLogOut}>
-                    <Text>Logout</Text>
+                <TouchableOpacity style={Styles.btnLogOut} onPress={() => this.props.navigation.navigate("Home")}>
+                    <Text style={StyleSheet.create({ color: "#fff", fontSize: 15})}>Logout</Text>
                 </TouchableOpacity>
             </View>
         )

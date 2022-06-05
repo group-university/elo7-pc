@@ -24,7 +24,12 @@ const Styles = StyleSheet.create({
         alignItems: "center"
     },
     btnLogOut:{
-       
+       alignSelf: 'flex-end',
+       backgroundColor: '#e8850c',
+       width: '40%',
+       padding: 12,
+       alignItems: 'center',
+       borderRadius: 20
     }
 })
 
