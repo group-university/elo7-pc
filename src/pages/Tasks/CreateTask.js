@@ -4,6 +4,18 @@ import CreateTaskStyles from './CreateTaskStyles';
 import list from "../assets/Images/list.png";
 
 export default class CreateTask extends react.Component {
+
+    constructor(props){
+        super(props)
+        this.state={
+            newTask: ""
+        }
+    }
+
+    validate_field=() => {
+        
+    }
+
     render(_navigation){
         return(
             <ScrollView contentContainerStyle={{flexGrow: 1, justifyContent: 'center', alignItems: "center"}} 
